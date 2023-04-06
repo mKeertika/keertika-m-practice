@@ -1,4 +1,4 @@
-package home_work_april1st.address;
+package hw_april1st_NC.address;
 
 public class CustomerAddress {
     private boolean isPrimaryAddress;

@@ -1,4 +1,4 @@
-/*[In-Class Lab exercise: Method overloading] - We will do this right after we finish the coverage “Overloading Methods” (slide #33-#36) of this presentation
+/*[In-Dog Lab exercise: Method overloading] - We will do this right after we finish the coverage “Overloading Methods” (slide #33-#36) of this presentation
         Refactor the “StudentRecord” class to add the following two overloaded “print(..)” methods
 public void print(String name)
 public void print(String name, double averageScore)

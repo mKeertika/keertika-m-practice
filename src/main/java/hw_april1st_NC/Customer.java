@@ -1,12 +1,10 @@
-package home_work_april1st;
+package hw_april1st_NC;
 
-import home_work_april1st.address.CustomerAddress;
+import hw_april1st_NC.address.CustomerAddress;
 
 public class Customer {
-
     //private int customerCount;
     private String customerName;
-    //private String address;
     private String email;
     private Product[] purchasedProducts;
     private CustomerAddress[] addresses;

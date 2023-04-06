@@ -1,4 +1,4 @@
-package home_work_march31;
+package hw_march31;
 
 public class Product {
     private String productName;
