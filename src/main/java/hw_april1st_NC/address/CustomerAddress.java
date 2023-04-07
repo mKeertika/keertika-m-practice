@@ -15,7 +15,14 @@ public class CustomerAddress {
         this.city = city;
         this.state = state;
     }
-
+    //get full customer add
+    public String customerAdd() {
+           String address = "is this primary address" + isPrimaryAddress() + " " +getStreetNumber() + " " +
+                   getStreetName() +
+                    "\n" + getCity() + ", " + getState();
+       // }
+        return address;
+    }
     //getters method
     public boolean isPrimaryAddress() {
         return isPrimaryAddress;

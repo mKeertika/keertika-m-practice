@@ -20,7 +20,7 @@ public class Customer {
         this.purchasedProducts = products;
     }
 
-    //getting customer info which will invoked in main method of the package
+    //getting customer info which will invoked in Main method of the package
     public String getCustomerInfo() {
         System.out.println("Customer Name: " + customerName.customerFullName());
         System.out.println("Customer address: " + customerAdd());
