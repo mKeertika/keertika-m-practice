@@ -1,4 +1,4 @@
-package hw_april1st_NC;
+package hw_april1st;
 
 public class Product {
     private String productName;

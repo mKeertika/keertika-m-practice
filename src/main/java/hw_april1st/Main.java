@@ -1,6 +1,6 @@
-package hw_april1st_NC;
+package hw_april1st;
 
-import hw_april1st_NC.address.CustomerAddress;
+import hw_april1st.address.CustomerAddress;
 
 public class Main {
     public static void main(String[] args) {

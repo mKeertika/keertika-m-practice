@@ -5,5 +5,8 @@ public class Main {
         Sub sub = new Sub();
         sub.setBark("xyz");
         System.out.println(sub.getBark());
+        //Employee1 employee = new SalariedEmployee();
+       // String name = employee.getName();
+       // double salary = employee.getMonthlySalary();
     }
 }

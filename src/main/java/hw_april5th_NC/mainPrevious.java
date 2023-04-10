@@ -2,8 +2,8 @@ package hw_april5th_NC;
 
 import hw_april5th_NC.address.CustomerAddress;
 
-public class main {
-    public static void main(String[] args) {
+public class mainPrevious {
+    public static void main1(String[] args) {
 
         Product product1 = new Product("TV", 500.0);
         Product product2 = new Product("Laptop", 1500.0);
