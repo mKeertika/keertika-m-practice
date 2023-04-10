@@ -63,3 +63,37 @@ One way you can check if an Employee worked or not is by checking the returned v
 Change HRClient class to use Department class
 Add Employee objects (actually SalariedEmployee and HourlyEmployee objects) to the Department object
 Invoke letEmployeesWorkAndReturnNumberOfEmployeesWhoWorked() method of the Department object and display the result
+
+[“Employee” app - Part #3: Polymorphism]
+Concepts that are exercised
+Overriding methods and Polymorphism
+High-level steps to take
+Add different behavior to sub-classes, in other words, the sub-classes override methods of a parent class
+Observe polymorphic behavior of Java
+Concrete steps to take
+Add the following method to the Employee class 
+public double computeMonthlyCompensation() { 
+       
+   return 0.0; 
+} 
+4. Implement computeMonthlyCompensation() method in the SalariedEmployee class overriding the one of the parent Employee class
+The computeMonthlyCompensation() method just returns the value of the monthlySalary field
+5. Implement computeMonthlyCompensation() method in the HourlyEmployee class overriding the one of the parent Employee class
+The computeMonthlyCompensation() method return the value of “hourlyRate * hoursWorkedPerMonth”
+6. Implement the following method to the Department class
+// Compute total monthly compensation of all   
+// employees in that department 
+     
+public double computeDepartmentMonthlyTotalCompensation(){ 
+         
+    // TODO: add code here 
+    return 0.0; 
+} 
+7. Add code in the HRClient class to display the result of calling computeDepartmentMonthlyTotalCompensation() method of the Department object
+Refactor HRClient class to create SalariedEmployee and HourlyEmployee objects with monthlySalary as a constructor argument for the SalariedEmployee object and hourlyRate and hoursWorkedPerMonth as constructor arguments for the HourlyEmployee objects (if you have not done so yet)
+8. Optional exercise (do this only if you have extra time)
+Add CommissionedEmployee sub-class with the following fields
+private double commissionRate;
+private double[] monthlySales;
+Implement computeMonthlyCompensation() method for the CommissionedEmployee as following:
+The monthly compensation for the CommissionedEmployee is total of “commissionRate * <each-sale-amount>”
