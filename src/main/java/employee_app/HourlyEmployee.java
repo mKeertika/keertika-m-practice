@@ -10,4 +10,10 @@ public class HourlyEmployee extends Employee {
     public HourlyEmployee(String name, LocalDate hireDate) {
         super(name, hireDate);
     }
+
+    @Override
+    public double computeMonthlyCompensation() {
+//        total number of emp
+        return (hoursWorkedPerMonth *hourlyRate);
+    }
 }

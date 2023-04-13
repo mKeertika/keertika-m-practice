@@ -2,7 +2,7 @@
         Refactor the “StudentRecord” class to add the following two overloaded “print(..)” methods
 public void print(String name)
 public void print(String name, double averageScore)
-        Refactor “Main” class above to use the above methods appropriately*/
+        Refactor “TestMonster” class above to use the above methods appropriately*/
 package student_record;
 
 public class StudentDetails {

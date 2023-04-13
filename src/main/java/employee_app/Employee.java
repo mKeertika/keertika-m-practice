@@ -22,6 +22,9 @@ public class Employee {
         return ("name = " + name + "; hireDate = " +
                 hireDate);
     }
+    public double computeMonthlyCompensation() {
+        return 0.0;
+    }
 
     public String getName() {
         return name;

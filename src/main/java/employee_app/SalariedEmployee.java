@@ -9,4 +9,9 @@ public class SalariedEmployee extends Employee {
     public SalariedEmployee(String name, LocalDate hireDate) {
         super(name, hireDate);
     }
+
+    @Override
+    public double computeMonthlyCompensation() {
+        return monthlySalary;
+    }
 }
