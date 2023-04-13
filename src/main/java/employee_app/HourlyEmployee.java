@@ -7,9 +7,12 @@ public class HourlyEmployee extends Employee {
     private double hourlyRate;
 
     //Constructor
-    public HourlyEmployee(String name, LocalDate hireDate) {
+    public HourlyEmployee(String name, LocalDate hireDate, int hoursWorkedPerMonth, double hourlyRate) {
         super(name, hireDate);
+        this.hourlyRate = hourlyRate;
+        this.hoursWorkedPerMonth = hoursWorkedPerMonth;
     }
+
 
     @Override
     public double computeMonthlyCompensation() {

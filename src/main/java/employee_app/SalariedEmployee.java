@@ -6,8 +6,10 @@ public class SalariedEmployee extends Employee {
     private double monthlySalary;
 
     //Constructor
-    public SalariedEmployee(String name, LocalDate hireDate) {
+    public SalariedEmployee(String name, LocalDate hireDate, double monthlySalary) {
+
         super(name, hireDate);
+        this.monthlySalary= monthlySalary;
     }
 
     @Override
