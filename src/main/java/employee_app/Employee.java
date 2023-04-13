@@ -19,12 +19,13 @@ public class Employee {
 
     //to compute total monthly compensation for all employee
 
-    public double computeMonthlyCompensation() {
+    public double computeMonthlyCompensation(){
         return 0.0;
-    }
+    };
 
     //compute working year logic
     public int computeNumberOfYearsWorkedSinceHired() {
+
         return (currentDate.getYear() - hireDate.getYear());
     }
 
