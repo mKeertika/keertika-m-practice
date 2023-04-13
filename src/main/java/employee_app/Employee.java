@@ -1,12 +1,11 @@
 package employee_app;
 import java.time.*;
-import java.time.chrono.ChronoLocalDate;
 
 public class Employee {
 
     private String name;
     private LocalDate hireDate;
-    private LocalDate currentdate= LocalDate.now();
+    private final LocalDate currentDate = LocalDate.now();
 
     //Constructor
     public Employee(String name, LocalDate hireDate) {
@@ -15,12 +14,12 @@ public class Employee {
     }
 
     //compute working year logic
-    public int computeNumberOfYearsWorkedSinceHired(){
-        return (currentdate.getYear() - hireDate.getYear());
+    public int computeNumberOfYearsWorkedSinceHired() {
+        return (currentDate.getYear() - hireDate.getYear());
     }
 
     public String getEmployeeInfo() {
-        return ("name = "+ name +"; hireDate = "+
+        return ("name = " + name + "; hireDate = " +
                 hireDate);
     }
 
@@ -29,6 +28,6 @@ public class Employee {
     }
 
     public String work() {
-        return ("Mike worked.");
+        return name+" worked";
     }
 }
