@@ -19,13 +19,8 @@ public abstract class Employee {
             double monthlySalary);
 
     public abstract String getEmployeeInfo();
-//    {
-//        return ("name = " + name + "; hireDate = " +
-//                hireDate);
-//    }
 
     //to compute total monthly compensation for all employee
-
     public abstract double computeMonthlyCompensation();
 
     //compute working year logic
