@@ -19,4 +19,26 @@ public class HourlyEmployee extends Employee {
 //        total number of emp
         return (hoursWorkedPerMonth *hourlyRate);
     }
+
+
+    @Override
+    public String getEmployeeInfo() {
+        return getName();
+    }
+    @Override
+    public String getEmployeeInfo(String name, LocalDate hireDate, double monthlySalary) {
+        return null;
+    }
+    @Override
+    public String getEmployeeInfo(
+            String name,
+            LocalDate hireDate,
+            int hoursWorkedPerMonth,
+            double hourlyRate) {
+        String outPut = "Employee "+ name +
+                " hired on "+ hireDate+
+                ", whose total working hour are "+ hoursWorkedPerMonth
+                +", hourly rate "+ hourlyRate;
+        return outPut;
+    }
 }

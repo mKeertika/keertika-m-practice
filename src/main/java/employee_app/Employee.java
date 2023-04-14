@@ -1,7 +1,7 @@
 package employee_app;
 import java.time.*;
 
-public class Employee {
+public abstract class Employee {
 
     private String name;
     private LocalDate hireDate;
@@ -12,16 +12,21 @@ public class Employee {
         this.name = name;
         this.hireDate = hireDate;
     }
-    public String getEmployeeInfo() {
-        return ("name = " + name + "; hireDate = " +
-                hireDate);
-    }
+
+    public abstract String getEmployeeInfo(
+            String name,
+            LocalDate hireDate,
+            double monthlySalary);
+
+    public abstract String getEmployeeInfo();
+//    {
+//        return ("name = " + name + "; hireDate = " +
+//                hireDate);
+//    }
 
     //to compute total monthly compensation for all employee
 
-    public double computeMonthlyCompensation(){
-        return 0.0;
-    };
+    public abstract double computeMonthlyCompensation();
 
     //compute working year logic
     public int computeNumberOfYearsWorkedSinceHired() {
@@ -36,4 +41,6 @@ public class Employee {
     public String work() {
         return name+" worked";
     }
+
+    public abstract String getEmployeeInfo(String name, LocalDate hireDate, int hoursWorkedPerMonth, double hourlyRate);
 }
