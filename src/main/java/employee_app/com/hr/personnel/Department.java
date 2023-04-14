@@ -1,9 +1,5 @@
 package employee_app.com.hr.personnel;
 
-import employee_app.Employee;
-import employee_app.HourlyEmployee;
-import employee_app.SalariedEmployee;
-
 public class Department {
 
     private String name;

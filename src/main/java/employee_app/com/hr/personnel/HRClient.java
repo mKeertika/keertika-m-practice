@@ -2,10 +2,6 @@ package employee_app.com.hr.personnel;
 
 import java.time.*;
 
-import employee_app.Employee;
-import employee_app.HourlyEmployee;
-import employee_app.SalariedEmployee;
-
 public class HRClient {
 
     public static void main(String[] args) {

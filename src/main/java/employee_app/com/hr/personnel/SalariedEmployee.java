@@ -1,4 +1,6 @@
-package employee_app;
+package employee_app.com.hr.personnel;
+
+import employee_app.com.hr.personnel.Employee;
 
 import java.time.LocalDate;
 

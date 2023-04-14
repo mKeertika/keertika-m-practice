@@ -1,4 +1,4 @@
-package employee_app;
+package employee_app.com.hr.personnel;
 import java.time.*;
 
 public abstract class Employee {
