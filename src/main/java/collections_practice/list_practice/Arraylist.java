@@ -1,4 +1,4 @@
-package collection;
+package collections_practice.list_practice;
 import  java.util.List;
 import  java.util.ArrayList;
 
@@ -12,6 +12,7 @@ public class Arraylist {
         animals.add("Deer");
         animals.add("fox");
         System.out.println(animals);
+        animals.remove(3);
 
         //adding element at particular index
 
