@@ -12,3 +12,9 @@ weekly 1-1.
 - "employee-app"
     - part #2 is done successfully
     - "Employee", "HourlyEmployee", "SalariedEmployee" classes are in the wrong package (minor)
+
+## April 17 (Monday)
+- "employee_app" is done up to part 5
+- Usage of enhanced for-loop in the Department
+  class would have been nicer since now you
+  are using ArrayList not array
