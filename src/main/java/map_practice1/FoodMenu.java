@@ -10,16 +10,17 @@ import java.util.Scanner;
 
 public class FoodMenu {
     public static void main(String[] args) throws FileNotFoundException {
-
+//
         File sample = new File("sample.txt");
         Scanner sc = new Scanner(sample);
 
 
-        System.out.println("/n----------- Testing reading sample.txt ----- ");
+        System.out.println("----------- Testing reading sample.txt ----- ");
         System.out.printf("%-20s %-20s %-10s %-10s %n", "Name", "Description", "Price", "Available Quantity");
         int line=0;
         while(sc.hasNextLine()){
-        String[] inputItems = sc.nextLine().split("  ");
+        String inputItems1 = sc.nextLine();
+        String[] inputItems= inputItems1.split("  ");
         String name= inputItems[0];
         String description= inputItems[1];
         double price=Double.parseDouble(inputItems[2]);
@@ -27,7 +28,6 @@ public class FoodMenu {
             System.out.printf("%-20s %-20s %-10.2f %-10d %n", name, description, price, availQuantity);
         }
         sc.close();
-
 
         Map<String, Item> stringItemHashMap = new HashMap<>();
     }
