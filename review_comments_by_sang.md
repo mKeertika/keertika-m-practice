@@ -18,3 +18,6 @@ weekly 1-1.
 - Usage of enhanced for-loop in the Department
   class would have been nicer since now you
   are using ArrayList not array
+
+## April 18th (Tuesday morning)
+- no "sba_exercise" work is checked in yet
