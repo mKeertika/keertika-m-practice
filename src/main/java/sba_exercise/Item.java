@@ -1,4 +1,4 @@
-package map_practice1;
+package sba_exercise;
 
 public class Item {
 
