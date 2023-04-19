@@ -1,4 +1,4 @@
-package exercise_sba_mock.exercise1;
+package sba_mock_exercise1;
 
 import java.lang.*;
 import java.util.ArrayList;
