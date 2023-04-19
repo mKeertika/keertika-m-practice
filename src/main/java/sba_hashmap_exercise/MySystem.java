@@ -1,4 +1,4 @@
-package exercise_sba_hashmap;
+package sba_hashmap_exercise;
 import java.util.HashMap;
 import java.util.Map;
 import java.io.File;

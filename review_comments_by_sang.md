@@ -20,4 +20,4 @@ weekly 1-1.
   are using ArrayList not array
 
 ## April 18th (Tuesday morning)
-- no "exercise_sba_hashmap" work is checked in yet-it was there but with map_exercise1, But I renamed it as exercise_sba_hashmap
+- no "sba_hashmap_exercise" work is checked in yet-it was there but with map_exercise1, But I renamed it as sba_hashmap_exercise
