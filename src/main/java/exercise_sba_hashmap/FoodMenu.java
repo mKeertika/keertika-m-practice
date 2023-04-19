@@ -1,4 +1,4 @@
-package sba_exercise;
+package exercise_sba_hashmap;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

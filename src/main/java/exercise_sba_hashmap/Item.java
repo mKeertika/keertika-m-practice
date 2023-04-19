@@ -1,4 +1,4 @@
-package sba_exercise;
+package exercise_sba_hashmap;
 
 public class Item {
 
