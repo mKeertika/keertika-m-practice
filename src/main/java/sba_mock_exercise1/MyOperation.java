@@ -3,12 +3,12 @@ package sba_mock_exercise1;
 import java.util.ArrayList;
 
 public class MyOperation implements IMyOperations {
-    private ArrayList<String> myArrayList = new ArrayList<>();
-    ArrayList<String> newMyArrayList = new ArrayList<>();
+    private ArrayList<String> myArrayList;
 
     //Constructor
 
     public MyOperation() {
+        myArrayList = new ArrayList<>();
     }
 
     @Override
@@ -30,6 +30,7 @@ public class MyOperation implements IMyOperations {
 
     @Override
     public ArrayList<String> createANewArrayListFromExistingArray() {
+        ArrayList<String> newMyArrayList = new ArrayList<>();
         for (String i : myArrayList) {
             if (!i.equals("Nah")) {
                 newMyArrayList.add(i);
@@ -42,9 +43,5 @@ public class MyOperation implements IMyOperations {
 
     public ArrayList<String> getMyArrayList() {
         return myArrayList;
-    }
-
-    public ArrayList<String> getNewMyArrayList() {
-        return newMyArrayList;
     }
 }

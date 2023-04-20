@@ -22,15 +22,14 @@ public class Main {
 
         //PART#4
         System.out.println("==================Printing PART#4 of mock SBA====================");
-        myOperation.replaceAnElementInTheStringArrayListGiven(1);
+        myOperation.replaceAnElementInTheStringArrayListGiven(2);
         System.out.println(myArrayList);
         System.out.println("");
 
 //        PART#5
         System.out.println("==================Printing PART#5 of mock SBA====================");
-        myOperation.createANewArrayListFromExistingArray();
-        ArrayList<String> myArrayListAfterEdit = myOperation.getNewMyArrayList();
-        System.out.println(myArrayListAfterEdit);
+        ArrayList<String> aNewArrayListFromExistingArray = myOperation.createANewArrayListFromExistingArray();
+        System.out.println(aNewArrayListFromExistingArray);
         System.out.println("");
 
 //        PART#6
@@ -47,7 +46,6 @@ public class Main {
                 throw new MyOwnException("Please enter a valid integer. try again");
             } catch (MyOwnException e) {
                 System.out.println(e.getMessage());
-
             }
         }
 

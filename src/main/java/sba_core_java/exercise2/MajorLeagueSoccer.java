@@ -1,17 +1,22 @@
 package sba_core_java.exercise2;
 
+import java.util.Arrays;
+
 public class MajorLeagueSoccer {
 
 
-    private int[] playerNumberArray = new int[11];
+    private int[] playerNumberArray;
 
     //Default Constructor
     public MajorLeagueSoccer() {
+        playerNumberArray= new int[11];
 
         for (int i = 0; i < 11; i++) {
 
             this.playerNumberArray[i] = i + 1;
         }
+        String s = Arrays.toString(playerNumberArray);
+        System.out.println(s);
     }
 
 
