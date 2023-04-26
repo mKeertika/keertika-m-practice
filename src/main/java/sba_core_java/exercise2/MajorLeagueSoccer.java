@@ -9,7 +9,7 @@ public class MajorLeagueSoccer {
 
     //Default Constructor
     public MajorLeagueSoccer() {
-        playerNumberArray= new int[11];
+        playerNumberArray = new int[11];
 
         for (int i = 0; i < 11; i++) {
 
