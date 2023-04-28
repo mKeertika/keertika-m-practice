@@ -1,5 +1,3 @@
-show tables;
-
 SELECT 
     customerName
 FROM
@@ -8,39 +6,57 @@ WHERE
     country IN ('USA' , 'France')
 ;
 
-select customerNumber, country, creditLimit
-from customers
-where country in ('USA','France') and creditLimit>100000
-order by creditLimit
+SELECT 
+    customerNumber, country, creditLimit
+FROM
+    customers
+WHERE
+    country IN ('USA' , 'France')
+        AND creditLimit > 100000
+ORDER BY creditLimit
 ;
 
-select productName
-from PRODUCTS
-where buyprice between '90' and '100'
+SELECT 
+    productName
+FROM
+    PRODUCTS
+WHERE
+    buyprice BETWEEN '90' AND '100'
 ;
 
-select productcode, productName, buyprice
-from PRODUCTS
-where buyprice >= '90' and buyprice<='100'
-order by buyprice
+SELECT 
+    productcode, productName, buyprice
+FROM
+    PRODUCTS
+WHERE
+    buyprice >= '90' AND buyprice <= '100'
+ORDER BY buyprice
 ;
 
-select productcode, productName, buyprice
-from PRODUCTS
-where buyprice  not between '20' and '100'
-order by buyprice
+SELECT 
+    productcode, productName, buyprice
+FROM
+    PRODUCTS
+WHERE
+    buyprice NOT BETWEEN '20' AND '100'
+ORDER BY buyprice
 ;
 
 
-select country, customername, salesrepemployeenumber
-from customers
-where salesrepemployeenumber is null
-order by customername
+SELECT 
+    country, customername, salesrepemployeenumber
+FROM
+    customers
+WHERE
+    salesrepemployeenumber IS NULL
+ORDER BY customername
 ;
 
 
-select customername, salesrepemployeenumber, country
-from customers
-where salesrepemployeenumber is not null
-order by customername;
-
+SELECT 
+    customername, salesrepemployeenumber, country
+FROM
+    customers
+WHERE
+    salesrepemployeenumber IS NOT NULL
+ORDER BY customername;
