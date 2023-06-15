@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,8 +28,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 
     @Override
-    public void saveEmployee(Employee employee) {
+    public Employee saveEmployee(Employee employee) {
         employeeRepository.save(employee);
+        return employee;
     }
 
 
@@ -63,7 +63,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void deleteEmployeeById(long id) {
+    public boolean deleteEmployeeById(long id) {
         employeeRepository.deleteById(id);
+        return false;
     }
 }
